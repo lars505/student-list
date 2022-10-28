@@ -1,0 +1,114 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #7B8B8C;
+    --gray-light: #D5DCF2;
+    --azul-bandera: #0540F2;
+    --azul-strong: #380140;
+    --bumblebee: #F2E307;
+    --text-input-field: #F7F7F7;
+    --natural-green: #055902;
+    --light-green: #88A61B;
+    --md: 16px;
+    --lg: 18px;
+    --xl: 22px;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+nav{
+    background-color: var(--azul-strong);
+    box-shadow: 0px 4px #8888;
+}
+body{
+    background-color: var(--azul-strong) !important;
+    color: var(--white) !important;
+}
+.navbar-brand{
+    color: var(--bumblebee) !important;
+}
+.navbar-nav a{
+    border: 1px solid var(--bumblebee);
+    color: var(--bumblebee) !important;
+    margin: 0 5px 0 5px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.navbar-nav a:hover{
+    border: 2px solid var(--white);
+    color: var(--white) !important;
+}
+
+.for{
+    width: 80% !important;
+    height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-titulo label{
+    font-size: var(--xl);
+    font-weight: bold;
+    color: var(--bumblebee);
+    margin-bottom: 20px;
+}
+.for form{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.input-username,.input-nombres, .input-apellidos ,.input-username, .input-password, .input-confirmacion {
+    width: 300px ;
+    height: 35px ;
+    background: var(--text-input-field) !important;
+    border: 2px solid var(--bumblebee) !important;
+    border-radius: 4px !important;
+    margin: 10px 0 10px 0 !important;
+    padding: 5px !important;
+    -webkit-border-radius: 4px ;
+    -moz-border-radius: 4px ;
+    -ms-border-radius: 4px ;
+    -o-border-radius: 4px ;
+    outline: none;
+}
+.input-submit{
+    width: 50%;
+    height: 35px;
+    background-color: var(--azul-strong);
+    border: 2px solid var(--bumblebee);
+    border-radius: 4px;
+    margin-top: 22px;
+    padding: 5px;
+    color: var(--bumblebee);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.input-submit:hover{
+
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+@media screen and (max-width: 990px)
+{
+    .nav-link{
+        margin: 5px 0 5px 0 !important;
+        text-align: center;
+    }
+   
+}
