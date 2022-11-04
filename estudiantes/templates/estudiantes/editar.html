@@ -1,5 +1,20 @@
 {% extends 'estudiantes/layout.html' %}
 {% block title %}Index{% endblock %}
 {% block body %} 
-    <h1>Editar</h1>
+    
+<div class="row">
+    <div class="col-md-12 col-12">
+        <div class="fo m-auto">
+            {% load crispy_forms_tags%}
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <br>
+                <input type="submit" value="Editar" class=" m-auto input-submit btn btn-success float-right">
+            </form>
+        </div>
+    </div>
+</div>
+
+
 {% endblock %}

@@ -2,4 +2,30 @@
 {% block title %}Index{% endblock %}
 {% block body %} 
     <h1>Listar</h1>
+    <table class="table text-light">
+        <tr>
+            <th>Correo</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Edad</th>
+            <th class="text-center">Opcion</th>
+        </tr>
+        {%for estudiante in estudiantes %}
+        <tr>
+            <td>{{estudiante.correo }}</td>
+            <td>{{estudiante.nombre| capfirst}}</td>
+            <td>{{estudiante.apellidos}}</td>
+            <td>{{estudiante.edad}}</td>
+            <td>
+                <a class="btn btn-sm btn-success" href="{% url 'editar_estudiante' estudiante.id %}">Modificar</a>
+
+                <a class="btn btn-sm btn-danger" href="{% url 'eliminar_estudiante' estudiante.id %}">Eliminar</a>
+            </td>
+        </tr>
+    
+        {% endfor %}
+    </table>
+        
+        
+    
 {% endblock %}
